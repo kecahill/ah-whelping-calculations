@@ -1,34 +1,18 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <title>Cake Form</title>
-  <script type="text/javascript" src="includes/formcalculations.js"></script>
-  <link href="includes/whelping-calculator.css" rel="stylesheet" type="text/css" />
-</head>
+<html>
+<body>
 
-<body onload='hideTotal()'>
-  <div id="wrap">
-    <form action="" id="whelping-calculator" onsubmit="return false;">
-      <div>
-        <div class="cont_order">
-          <fieldset>
-            <legend>Whelping Calculator</legend>
-            <label>Enter the Date</label>
-            <input type="date" name="userDate" value="date" onclick="getEnteredDate()" />
-            </label><br/>
-            <br/>
-            <label>Date of Birth</label>
+<input type="date" id="myDate" value="2000-05-05">
 
-            <div id="newDate"></div>
+<p>Click the button to get the date of the date field.</p>
 
-          </fieldset>
-        </div>
+<button onclick="myFunction()">Try it</button>
 
-    </form>
-    </div>
-    <!--End of wrap-->
+<p><strong>Note:</strong> input elements with type="date" do not show as any date field/calendar in Firefox.</p>
+
+<p id="demo"></p>
+
 
 </body>
-
 </html>

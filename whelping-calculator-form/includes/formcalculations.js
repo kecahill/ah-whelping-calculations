@@ -1,14 +1,17 @@
-var currentDate = new Date(); // will give current date
-
-var userDate = new Date(mm,dd,yyyy);
-
-function getEnteredDate()
-{  
-  // add a day
- 
-  //display the result
-    var divobj =  document.getElementById('newDate');
+function myFunction() {
+    var x =     document.getElementById("myDate").value;
+    document.getElementById("demo").innerHTML = x;
   
-    divobj.style.display='block';
-    divobj.innerHTML = "Birthdate: "+userDate;
+ var popcorn = new Date;
+var numberOfDaysToAdd = 63;
+popcorn.setDate(popcorn.getDate() + numberOfDaysToAdd); 
+  
+  var dd = popcorn.getDate();
+var mm = popcorn.getMonth() + 1;
+var y = popcorn.getFullYear();
+  
+var someFormattedDate = mm + '/'+ dd + '/'+ y;
+   document.getElementById("demo").innerHTML = someFormattedDate;
+  
+  
 }
