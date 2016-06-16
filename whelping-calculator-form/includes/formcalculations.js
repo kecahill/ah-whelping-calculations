@@ -2,16 +2,15 @@ function myFunction() {
     var x =     document.getElementById("myDate").value;
     document.getElementById("demo").innerHTML = x;
   
- var demo = new Date;
+ var popcorn = new Date(x);
 var numberOfDaysToAdd = 63;
-demo.setDate(demo.getDate() + numberOfDaysToAdd); 
+popcorn.setDate(popcorn.getDate() + numberOfDaysToAdd); 
   
-  var dd = demo.getDate();
-var mm = demo.getMonth() + 1;
-var y = demo.getFullYear();
+  var dd = popcorn.getDate();
+var mm = popcorn.getMonth() + 1;
+var y = popcorn.getFullYear();
   
 var someFormattedDate = mm + '/'+ dd + '/'+ y;
    document.getElementById("demo").innerHTML = someFormattedDate;
-  
   
 }
