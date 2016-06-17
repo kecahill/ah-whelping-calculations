@@ -1,5 +1,5 @@
 function onloadFunction() {
-  document.getElementById("someText").style.visibility = "hidden";
+  document.getElementById("newDate").style.visibility = "hidden";
 
   var date = new Date;
   var dateString = date.toString();
@@ -16,18 +16,18 @@ function onloadFunction() {
 function myFunction() {
 
   var x = document.getElementById("myDate").value;
-  document.getElementById("someText").innerHTML = x;
+  document.getElementById("newDate").innerHTML = x;
 
-  var popcorn = new Date(x);
+  var getNewDate = new Date(x);
   var numberOfDaysToAdd = 63;
-  popcorn.setDate(popcorn.getDate() + numberOfDaysToAdd);
+  getNewDate.setDate(getNewDate.getDate() + numberOfDaysToAdd);
 
-  var dd = popcorn.getDate();
-  var mm = popcorn.getMonth() + 1;
-  var y = popcorn.getFullYear();
+  var dd = getNewDate.getDate();
+  var mm = getNewDate.getMonth() + 1;
+  var y = getNewDate.getFullYear();
 
   var formattedDate = mm + '/' + dd + '/' + y;
-  document.getElementById("someText").innerHTML = formattedDate;
-  document.getElementById("someText").style.visibility = "visible";
+  document.getElementById("newDate").innerHTML = formattedDate;
+  document.getElementById("newDate").style.visibility = "visible";
 
 }
