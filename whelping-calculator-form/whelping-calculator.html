@@ -4,7 +4,7 @@
 
 </head>
 
-<body>
+<body onload="onloadFunction()">
   <div id="wrap">
     <fieldset>
       <legend>This is some text saying something about whelping.</legend>
@@ -13,7 +13,9 @@
 
       <p><strong>Note:</strong> input elements with type="date" do not show as any date field/calendar in Firefox.</p>
 
-      <p id="demo"></p>
+      <div id="demo">
+        <p id="someText">00/00/0000</p>
+      </div>
 
     </fieldset>
 

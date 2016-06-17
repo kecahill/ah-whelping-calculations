@@ -52,3 +52,11 @@ fieldset {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+#demo {
+  display:block;
+  text-align: center;
+  margin: 0px 4em 0px 4em;
+  padding: 10px 10px 10px 10px;
+  background: blue;
+}

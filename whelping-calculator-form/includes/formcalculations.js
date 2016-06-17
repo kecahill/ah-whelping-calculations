@@ -1,16 +1,10 @@
-function codeAddress() {
-
-  var today = moment().format('YYYY-MM-DD');
-  $('#myDate').val(today);
-
-  alert('ok');
+function onloadFunction() {
+  document.getElementById("someText").style.visibility = "hidden";
 }
-window.onload = codeAddress;
-
 function myFunction() {
-
+   
   var x = document.getElementById("myDate").value;
-  document.getElementById("demo").innerHTML = x;
+  document.getElementById("someText").innerHTML = x;
 
   var popcorn = new Date(x);
   var numberOfDaysToAdd = 63;
@@ -21,6 +15,7 @@ function myFunction() {
   var y = popcorn.getFullYear();
 
   var formattedDate = mm + '/' + dd + '/' + y;
-  document.getElementById("demo").innerHTML = formattedDate;
+  document.getElementById("someText").innerHTML = formattedDate;
+  document.getElementById("someText").style.visibility = "visible";
 
 }
