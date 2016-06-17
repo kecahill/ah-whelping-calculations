@@ -13,17 +13,20 @@
 #wrap fieldset,
 fieldset {
   margin: 10px;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
+  background: #DA2537;
+  border-color: #CC0E21;
+  color: #F9EEFF;
 }
 
-#wrap legend {
-  font-size: 16px;
+#wrap h1 {
+  font-size: 18px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #000;
+  color: #261B1B;
   font-weight: bold;
   font-style: italic;
   padding: 5px 10px 0px 10px;
@@ -35,19 +38,20 @@ fieldset {
 }
 
 #wrap input[type="date"] {
-  background: lightgray;
+  background: #E0D6E5;
   font-size: 1.3em;
-  margin: 5px;
+  margin: 5px 5px 5px 15px;
   padding: 0px 0px 3px 10px;
   border-radius: 5px;
 }
 
 #wrap button#submit {
-  margin: 10px 10px 10px 10px;
-  padding: 8px 15px 8px 15px;
+  font-weight: bold;
+  margin: 10px 0px 10px 20px;
+  padding: 8px 14px 8px 14px;
   border-radius: 5px;
-  background-color: lightgreen;
-  border-color: lightgreen;
+  background-color: #15D354;
+  border-color: #4DD655;
 }
 
 #wrap p {
@@ -56,14 +60,18 @@ fieldset {
 
 #newDateBox {
   display: block;
-  margin: 0px 5em 0px 5em;
-  background: lightblue;
+  margin: 0px 6em 0px 6em;
+  background: #7CD7FA;
   border-radius: 5px;
+  -moz-box-shadow: inset 0 0 1px #3D697A;
+  -webkit-box-shadow: inset 0 0 1px #3D697A;
+  box-shadow: inset 0 0 1px #3D697A;
 }
 
 #newDate {
-  font-size: 1.3em;
-  margin: 2px;
+  font-size: 1.5em;
+  margin: 1px;
   text-align: center;
-  padding: 1em 0px 1em 0px;
+  padding: .5em 0px .5em 0px;
+  color: #000;
 }
