@@ -1,8 +1,20 @@
 function onloadFunction() {
   document.getElementById("someText").style.visibility = "hidden";
+
+  var date = new Date;
+  var dateString = date.toString();
+
+  function toJSONLocal(date) {
+    var local = new Date(date);
+    local.setMinutes(date.getMinutes() - date.getTimezoneOffset());
+    return local.toJSON().slice(0, 10);
+  }
+  document.getElementById("myDate").value = toJSONLocal(date);
+
 }
+
 function myFunction() {
-   
+
   var x = document.getElementById("myDate").value;
   document.getElementById("someText").innerHTML = x;
 

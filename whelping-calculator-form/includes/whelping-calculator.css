@@ -26,18 +26,7 @@ fieldset {
   color: #000;
   font-weight: bold;
   font-style: italic;
-  padding-bottom: 10px;
-}
-
-#wrap label {
-  display: block;
-  font-size: 12px;
-  color: #000;
-  font-weight: bold;
-}
-
-#wrap label.inlinelabel {
-  display: inline;
+  padding: 5px 10px 0px 10px;
 }
 
 #wrap input[type="date"]:hover,
@@ -45,18 +34,23 @@ fieldset {
   background-color: #FAF398;
 }
 
+#wrap input[type="date"] {
+  background: lightgray;
+  font-size: 1.3em;
+  margin: 5px;
+  padding: 3px 0px 3px 10px;
+}
+
 #wrap button#submit {
-  margin: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 10px 10px 10px 10px;
+  padding: 13px 15px 10px 15px;
 }
 
 #demo {
-  display:block;
+  display: block;
   text-align: center;
   margin: 0px 4em 0px 4em;
   padding: 10px 10px 10px 10px;
-  background: blue;
+  background: lightblue;
+  border-radius: 7px;
 }
